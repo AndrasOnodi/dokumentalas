@@ -19,3 +19,13 @@ Az App osztály az alkalmazás belépési pontja. Csak az alkalmazás inditásá
 ##  A Store osztály
 
 A Store osztály segítségével beolvassuk a .csv kiterjesztésü fájl tartalmát.
+
+## A tryReadFile metódus
+
+A tryReadFile() metódus olvassa be ténylegesen a fájl tartalmát, amelynek a hibakezelője a readFile() metódus.
+
+A fájl beolvasásakor a readFile()-t kell meghívni.
+
+## Az Employee osztály
+
+Az Employee osztály a fájlból beolvasott dolgozók tárolására szolgál. Egy Employee objektumban a fájl egyetlen sora tárolható.

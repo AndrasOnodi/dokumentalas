@@ -4,14 +4,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Store {
+
     public ArrayList<Employee> readFile() {
         try {
-            return tryReadFile();
+            return tryreadFile();
         } catch (FileNotFoundException e) {
             System.err.println(e.getMessage());
             return null;
         }
     }
+
+    public ArrayList<Employee> tryreadFile() throws FileNotFoundException {
+
         ArrayList<Employee> empList = new ArrayList<>();
         String fileName = "dolgozok_002_rendbetett.csv";
         File file = new File(fileName);
